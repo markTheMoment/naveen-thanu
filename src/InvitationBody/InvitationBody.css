@@ -1,0 +1,42 @@
+.invitationBody {
+  /* background-image: url("./assets/background.png"); */
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: gold;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.styled-Text {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  color: gold;
+}
+
+.names {
+  font-family: "IM Fell English SC", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: gold;
+
+  letter-spacing: 2px;
+  border-top: 2px solid darkslategrey;
+  border-bottom: 2px solid darkslategrey;
+  display: inline-block;
+  /* padding: 10px 10px; */
+}
+
+.amp {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 0 10px;
+  color: gold;
+}
