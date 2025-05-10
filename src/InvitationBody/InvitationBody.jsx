@@ -1,6 +1,6 @@
 import "./InvitationBody.css";
 import LocationPinIcon from "@mui/icons-material/LocationPin";
-import LocationQrCode from "../assets/locationqr.png";
+import locationqr from '../assets/locationqr.png'
 
 const locationLink =
   "https://www.google.com/maps/place/Sri+Channamaji+Samudaya+Bhavana/@14.0214828,75.9555455,854m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bba5b0f8bae4707:0xb8824aa640913de5!8m2!3d14.0214828!4d75.9581204!16s%2Fg%2F1q645ww7x?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D";
@@ -15,6 +15,7 @@ const InvitationBody = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          color: "#4d4104",
         }}
       >
         With our best friends & beloved family
@@ -27,7 +28,7 @@ const InvitationBody = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color:'#4d4104'
+          color: "#4d4104",
         }}
       >
         Save the Date
@@ -46,30 +47,32 @@ const InvitationBody = () => {
       <div className="text">muhurtha at:</div>
       <div className="text">18th May 2025, 7:00am - 7:50am</div>
 
-      
-
       <a id="targetLink" href={locationLink}>
         <img
-          src='src/assets/locationqr.png'
+          src={locationqr}
           alt="location"
           width="100px"
           height="100px"
           style={{ borderRadius: "10px", padding: "20px" }}
         />
       </a>
-      <div className="text">(Please Scan above for the Location)</div>
-      <a
-        className="text"
-        href={locationLink}
-      >
+      <div className="text" style={{ color: "black" }}>
+        (Please Scan or click above for the Location)
+      </div>
+      <a className="text" href={locationLink} style={{ color: "black" }}>
         <u>
           <LocationPinIcon /> Sri Channamaji Samudaya Bhavana
         </u>
       </a>
+      
 
       <div style={{ fontSize: "15px" }}></div>
-      <div className="text">Channagiri, Chitradurga Rd</div>
-      <div className="text">Karnataka - 577213</div>
+      <div className="text" style={{ color: "black" }}>
+        Channagiri, Chitradurga Rd
+      </div>
+      <div className="text" style={{ color: "black" }}>
+        Karnataka - 577213
+      </div>
     </div>
   );
 };

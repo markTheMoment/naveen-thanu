@@ -1,5 +1,6 @@
 .overlay {
   background-image: url("./assets/Naveen-Thanu2.jpg");
+  background-color: black;
   /* background-color: black; */
   background-size: cover;
   background-attachment: fixed;
